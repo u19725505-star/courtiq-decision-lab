@@ -1,39 +1,53 @@
 # CourtIQ — The Decision Lab
 
-**An interactive basketball analytics experience** exploring shot context, defensive pressure, out-of-fold model evidence, game-level robustness, and spatial analytics limitations.
+**An interactive basketball analytics experience** investigating whether shot context and defensive pressure improve shot-make prediction on held-out games.
 
 ## Live judge experience
 
-Open the live experience: https://u19725505-star.github.io/courtiq-decision-lab/
+- **Live demo:** https://u19725505-star.github.io/courtiq-decision-lab/
+- **Source repository:** https://github.com/u19725505-star/courtiq-decision-lab
+- **Notebook folder:** [Notebook](https://github.com/u19725505-star/courtiq-decision-lab/tree/main/Notebook)
+- **Figures:** [figures/](https://github.com/u19725505-star/courtiq-decision-lab/tree/main/figures)
+- **Tables and source data:** [tables/](https://github.com/u19725505-star/courtiq-decision-lab/tree/main/tables)
 
-The site includes:
-- A basketball opening reel and sports-broadcast-inspired presentation.
-- A browser-based AI voice narrator with play, pause, and stop controls. Voice availability and perceived gender depend on voices installed on the visitor's browser/device.
-- A research-question scoreboard with explicit questions and testable hypotheses.
-- An animated model leaderboard and full saved metric table.
-- A rotatable 3D-style court schematic with illustrative distance/pressure layers.
-- A guided explanation of evaluation, game-level robustness, and research limitations.
+The experience includes a basketball opening reel, a seven-step narrated judge walkthrough, animated model comparison, saved metric results, a rotatable source-coordinate explorer, a game-level robustness summary, and an explicit limitations review. Browser speech availability depends on the judge's device; all key points are also presented on screen.
 
-## Current reported research snapshot
+## Reported research snapshot
 
-- 1,459 shot records across 10 games
-- Five saved out-of-fold model probability streams
-- Best reported ROC-AUC: 0.6549 (contest-level model)
-- Best reported Brier score: 0.2237 (contest-level model)
-- Reported OOF shot-ID join coverage: 100%
-- Reported paired game-cluster bootstrap AUC gain: +0.0648, 95% interval [0.0383, 0.0874]
+| Measure | Reported result |
+|---|---:|
+| Shot records in engineered dataset | 1,459 |
+| Game clusters | 10 |
+| Saved out-of-fold model probability streams | 5 |
+| Shot-ID join coverage | 100% |
+| Best ROC-AUC | 0.6549 — contest-level model |
+| Best Brier score | 0.2237 — contest-level model |
+| Highest average precision | 0.6172 — both defensive features |
+| Paired game-cluster bootstrap AUC gain vs baseline | +0.0648 |
+| Reported 95% interval for AUC gain | [0.0383, 0.0874] |
 
-## Spatial-data honesty
+The contest-level model has the strongest reported ROC-AUC and Brier score. The model with both defensive features has the highest average precision and slightly better log loss. These metrics answer different questions; no single model wins every metric.
 
-The current engineered dataset does **not** contain verified court x/y coordinates. The court view is an interactive schematic intended to explain the spatial analytics concept; its markers are illustrative, not actual shot locations. Real shot mapping requires verified coordinates and a documented court-coordinate convention.
+## Spatial-data provenance and limits
+
+The repository includes `data/court_shots.json`, parsed from `tables/source_shots_raw.csv`. It contains **1,433 parseable source coordinate pairs across 10 games**. The interactive explorer plots those source values, normalizing them for display. Height is a visual encoding of shot distance, not measured ball trajectory.
+
+**Important:** the source coordinate axis convention, orientation, and court calibration have not been independently verified. The explorer is therefore a source-coordinate visualization, not a verified regulation-court shot chart. Do not infer exact court zones or coaching prescriptions from its geometry until that validation is complete.
 
 ## Interpretation and limitations
 
-The current results are predictive evidence, not causal proof and not a claim of demonstrated game-winning impact. Only 10 game clusters are represented in the reported robustness audit, so uncertainty estimates may be unstable. Independent validation on more games is necessary before decision-support claims.
+- These are predictive associations, not causal proof and not evidence of demonstrated game-winning impact.
+- The reported robustness check has only 10 game clusters; uncertainty intervals may be unstable.
+- Results need independent evaluation across more games and, ideally, teams or seasons not represented in model development.
+- Further work should verify coordinate semantics, evaluate calibration and subgroup performance, and test whether the information improves real decisions prospectively.
+- This prototype is a research demonstration, not a live coaching or player-evaluation system.
 
-## Research source
+## Judge walkthrough
 
-- [Repository](https://github.com/u19725505-star/courtiq-decision-lab)
-- [Notebook folder](https://github.com/u19725505-star/courtiq-decision-lab/tree/main/Notebook)
-- [Figures folder](https://github.com/u19725505-star/courtiq-decision-lab/tree/main/figures)
-- [Tables folder](https://github.com/u19725505-star/courtiq-decision-lab/tree/main/tables)
+1. Open the live demo and select **Judges Entrance**.
+2. Follow the seven chapters in order: research questions, data, spatial explorer, model evidence, robustness, limitations, and final play.
+3. Use the layer controls and drag/rotate controls in the spatial explorer.
+4. Compare ROC-AUC, Brier score, average precision, and log loss rather than relying on a single headline number.
+5. Finish by reviewing the validation limits and future work.
+
+If narration is unavailable, use the visible chapter text and the Next/Back controls. On mobile, rotate to landscape for the spatial visualization if needed.
