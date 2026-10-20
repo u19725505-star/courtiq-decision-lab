@@ -1,0 +1,6 @@
+model,display_name,shots_total,predictions_present,coverage,out_of_range_predictions,nonfinite_predictions,unique_shot_ids
+baseline_shot_context,Baseline context,1459,1459,1.0,0,0,1459
+plus_closest_defender,Context + defender distance,1459,1459,1.0,0,0,1459
+plus_contest_level,Context + contest,1459,1459,1.0,0,0,1459
+both_defensive_features,Both defensive features,1459,1459,1.0,0,0,1459
+engineered_context,Engineered context,1459,1459,1.0,0,0,1459

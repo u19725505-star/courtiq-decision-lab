@@ -1,0 +1,3 @@
+comparison,observed_improvement,bootstrap_95pct_low,bootstrap_95pct_high,bootstrap_probability_improvement_positive,valid_replicates,requested_replicates,independent_game_clusters
+ROC-AUC gain: both features vs baseline,0.06837254651608182,0.0496447211682934,0.0847340340181048,1.0,5000,5000,10
+Brier improvement: both features vs baseline,0.015660397294628564,0.010699550355118007,0.020013064225377065,1.0,5000,5000,10

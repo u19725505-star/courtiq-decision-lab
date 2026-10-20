@@ -1,0 +1,6 @@
+model,display_name,weighted_calibration_gap,shots_in_calibration
+baseline_shot_context,Baseline context,0.07782611947524765,1459
+plus_closest_defender,Context + defender distance,0.08350624728229539,1459
+plus_contest_level,Context + contest,0.08778578874551073,1459
+both_defensive_features,Both defensive features,0.0926687768143743,1459
+engineered_context,Engineered context,0.09451735990158272,1459

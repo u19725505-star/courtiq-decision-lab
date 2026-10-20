@@ -1,0 +1,12 @@
+artifact,exists,bytes
+courtiq_context_engineered_dataset.csv,True,244711
+courtiq_cell8_recomputed_oof_metrics.csv,True,950
+courtiq_oof_predictions_v2.csv,True,159609
+courtiq_logo_predictions_v2.csv,True,421331
+COURTIQ_STATISTICAL_EVIDENCE_BRIEF.md,True,2415
+COURTIQ_CALIBRATION_ERROR_ANALYSIS.md,True,1689
+COURTIQ_COACH_RESEARCH_BRIEF.md,True,2397
+COURTIQ_COMPETITION_EVIDENCE_DASHBOARD.html,True,748733
+COURTIQ_RELEASE_SUMMARY.json,True,1061
+courtiq_visuals/15_courtiq_competition_dashboard.png,True,558792
+courtiq_visuals/15_courtiq_competition_dashboard.svg,True,229096

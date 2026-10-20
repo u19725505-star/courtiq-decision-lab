@@ -1,0 +1,5 @@
+model,prediction_column,ROC_AUC,Average_precision,Brier_score
+Both defensive features,prob_plus_both_defensive_features,0.6670187534579952,0.6194098116060727,0.2187495299876268
+Baseline + contest level,prob_plus_contest_level,0.6655755845221099,0.6065674356449795,0.21885900658325197
+Baseline + closest defender,prob_plus_closest_defender,0.6265635942257766,0.5721037449228878,0.2300849686593466
+Shot context baseline,prob_baseline_shot_context,0.5986462069419134,0.49728247891531147,0.23440992728225538

@@ -1,0 +1,6 @@
+model,display_name,prediction_column,source_shots,valid_predictions,coverage,nonfinite_predictions,out_of_range_predictions
+baseline_shot_context,Baseline context,prob_baseline_shot_context,1459,1459,1.0,0,0
+plus_closest_defender,Context + defender distance,prob_plus_closest_defender,1459,1459,1.0,0,0
+plus_contest_level,Context + contest,prob_plus_contest_level,1459,1459,1.0,0,0
+both_defensive_features,Both defensive features,prob_both_defensive_features,1459,1459,1.0,0,0
+engineered_context,Engineered context,prob_engineered_context,1459,1459,1.0,0,0

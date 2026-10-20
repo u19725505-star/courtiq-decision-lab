@@ -1,0 +1,6 @@
+challenger,reference,games,auc_games_available,games_auc_improved,mean_auc_difference,median_auc_difference,games_brier_improved,mean_brier_improvement,median_brier_improvement,challenger_name,reference_name
+both_defensive_features,baseline_shot_context,10,10,9,0.06088751417625765,0.06272834308548597,9,0.019581630876002096,0.01813720427033068,Both defensive features,Baseline context
+both_defensive_features,plus_contest_level,10,10,3,-0.0043519873041085845,-0.005682083843177088,4,-2.799502117281638e-05,-0.0004917450917744232,Both defensive features,Context + contest
+engineered_context,baseline_shot_context,10,10,9,0.05959923731181975,0.06559769320185987,9,0.018590777105922038,0.01872816742556968,Engineered context,Baseline context
+engineered_context,plus_contest_level,10,10,3,-0.005640264168546483,-0.010228504557772855,4,-0.0010188487912528744,-0.0015019886982973324,Engineered context,Context + contest
+plus_contest_level,baseline_shot_context,10,10,9,0.06523950148036624,0.0631505286314683,10,0.019609625897174913,0.017656240882663987,Context + contest,Baseline context

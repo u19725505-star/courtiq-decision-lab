@@ -1,0 +1,6 @@
+model,display_name,shots,games,roc_auc,brier_score
+baseline_shot_context,Baseline context,1459,10,0.5901883857787888,0.24337528164986283
+plus_closest_defender,Context + defender distance,1459,10,0.6045320534398106,0.2379770758955105
+plus_contest_level,Context + contest,1459,10,0.6549452717839194,0.22371307713716182
+both_defensive_features,Both defensive features,1459,10,0.6509601135963536,0.2238140731763737
+engineered_context,Engineered context,1459,10,0.6501843619297452,0.22485198849213453
