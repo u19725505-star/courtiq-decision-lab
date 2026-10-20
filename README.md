@@ -42,7 +42,7 @@ The release contains **1,459 shot records across 10 game clusters**, with five s
 
 - **Contest-level context** has the strongest reported ROC-AUC and Brier score in this comparison.
 - **Both defensive features** have the highest average precision and slightly lower log loss than the contest-only variant.
-- Relative to the baseline, the reported paired game-cluster bootstrap AUC difference is **+0.0648**, with a reported 95% interval of **[0.0383, 0.0874]**. The game-level summary reports AUC improvement in 9 of 10 games and Brier improvement in all 10.
+- Relative to the baseline, the reported paired game-cluster bootstrap AUC difference is **+0.0648**, with a reported 95% interval of **[0.0383, 0.0874]**. The saved per-game tables show how performance varies across the ten observed games; inspect those rows rather than relying on an aggregate claim of uniform improvement.
 - These results are promising within this evaluation, but only **10 game clusters** support the game-level robustness analysis. The interval can be unstable and should not be read as definitive evidence of generalization to new teams, seasons, or competition settings.
 
 ### Visual evidence
