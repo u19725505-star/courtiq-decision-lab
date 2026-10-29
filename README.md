@@ -36,7 +36,7 @@ CourtIQ is an interactive basketball analytics research prototype exploring a pr
 
 <p align="center"><strong>▶ Click the thumbnail to watch the video on YouTube.</strong></p>
 
-> **GitHub note:** GitHub READMEs do not play YouTube videos inline. This large, clickable thumbnail is the compatible embed-style preview; selecting it opens the full video on YouTube. <Cite refs={[]}/>
+> **GitHub note:** GitHub READMEs do not play YouTube videos inline. This large, clickable thumbnail is the compatible embed-style preview; selecting it opens the full video on YouTube.
 
 ---
 
